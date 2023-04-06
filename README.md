@@ -82,3 +82,10 @@ RUN /bin/sh -c 'nohup $JBOSS_HOME/bin/standalone.sh -c standalone-openshift.xml 
     $JBOSS_HOME/bin/jboss-cli.sh --connect --command="/subsystem=datasources/jdbc-driver=oracleXA:add(driver-name="oracleXA",driver-module-name="com.oracle",driver-xa-datasource-class-name=oracle.jdbc.xa.client.OracleXADataSource)" && \ (7)
     rm ojdbc8.jar
 ```
+* (1) Original container image.
+* (2) Starts JBoss EAP and opens manager port.
+* (3) Waiting 10 seconds starts JBoss EAP.
+* (4) Downloads Oracle JDBC drivers.
+* (5) Installs ojdbc as a JBoss EAP module.
+* (6) Installs Oracle JDBC driver.
+* (7) Installs Oracle JDBC XA driver.
