@@ -7,14 +7,10 @@ This smart-start describes how create a a custom JBoss EAP image and install Ora
 * VSCode or any text editor
 
 ## Summary
-* [Registry Aut](#building-an-application)
-* [Running JBoss EAP](#running-jboss-eap)
-    * [Deploying this example](#deploying-this-example)
-    * [Inspecting application logs](#inspecting-application-logs)
-* [Understanding LOG configuration](#understanding-log-configuration)
-    * [Servlet Example](#servlet-example)
-    * [File logging.properties](#file-logging.properties)
-    * [Using JBoss EAP System Properties](#using-jboss-eap-system-properties)
+* [Authentication on Red Hat Registry Image](#authentication-on-red-hat-registry-image)
+* [Building custom image image](#building-custom-image-image)
+* [Undertanding Containerfile](#undertanding-containerfile)
+
 
 ## Authentication on Red Hat Registry Image
 To pull Red Hat JBoss EAP image is necessary be authenticated. To login at registry use podman.
