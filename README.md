@@ -70,7 +70,7 @@ localhost/jboss74-ojdbc                                         v1          6685
 registry.redhat.io/jboss-eap-7/eap74-openjdk11-openshift-rhel8  7.4.10-3    be2dbd5abda1  2 weeks ago     1 GB
 ```
 ## Undertanding Containerfile
-Above containerfile.
+Below containerfile.
 ```dockerfile
 FROM registry.redhat.io/jboss-eap-7/eap74-openjdk11-openshift-rhel8:7.4.10-3 (1)
 RUN /bin/sh -c 'nohup $JBOSS_HOME/bin/standalone.sh -c standalone-openshift.xml -b 0.0.0.0  > /dev/null &' && \ (2)
